@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		219EEAAF228DA925B419C789 /* Pods-MWPhotoBrowser_LZ_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_LZ_Example.release.xcconfig"; path = "Target Support Files/Pods-MWPhotoBrowser_LZ_Example/Pods-MWPhotoBrowser_LZ_Example.release.xcconfig"; sourceTree = "<group>"; };
-		383FDE6759A1E7E07E210BFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		383FDE6759A1E7E07E210BFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4C0F165DB293C7A877C70FD7 /* Pods-MWPhotoBrowser_LZ_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_LZ_Example.debug.xcconfig"; path = "Target Support Files/Pods-MWPhotoBrowser_LZ_Example/Pods-MWPhotoBrowser_LZ_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MWPhotoBrowser_LZ_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWPhotoBrowser_LZ_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB059D4F6CF99C4425A4783C /* Pods-MWPhotoBrowser_LZ_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_LZ_Tests.release.xcconfig"; path = "Target Support Files/Pods-MWPhotoBrowser_LZ_Tests/Pods-MWPhotoBrowser_LZ_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B3A3123E31B0B0071E1E11DE /* Pods_MWPhotoBrowser_LZ_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWPhotoBrowser_LZ_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC8B68CD3D503FB7AB7310CA /* MWPhotoBrowser_LZ.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MWPhotoBrowser_LZ.podspec; path = ../MWPhotoBrowser_LZ.podspec; sourceTree = "<group>"; };
+		BC8B68CD3D503FB7AB7310CA /* MWPhotoBrowser_LZ.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MWPhotoBrowser_LZ.podspec; path = ../MWPhotoBrowser_LZ.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF3681BE175C066D6C98DDF7 /* Pods-MWPhotoBrowser_LZ_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWPhotoBrowser_LZ_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MWPhotoBrowser_LZ_Tests/Pods-MWPhotoBrowser_LZ_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F113D641000D2CEDF4C9EEA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F113D641000D2CEDF4C9EEA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FDEC1D18156BC918A88788E1 /* Pods_MWPhotoBrowser_LZ_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWPhotoBrowser_LZ_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				BF3681BE175C066D6C98DDF7 /* Pods-MWPhotoBrowser_LZ_Tests.debug.xcconfig */,
 				AB059D4F6CF99C4425A4783C /* Pods-MWPhotoBrowser_LZ_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Cui lizhong";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = WY4DMUU59Y;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,11 +368,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MWPhotoBrowser_LZ_Example/Pods-MWPhotoBrowser_LZ_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowser_LZ/MWPhotoBrowser_LZ.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowser_LZ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,6 +522,7 @@
 			baseConfigurationReference = 4C0F165DB293C7A877C70FD7 /* Pods-MWPhotoBrowser_LZ_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WY4DMUU59Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWPhotoBrowser_LZ/MWPhotoBrowser_LZ-Prefix.pch";
 				INFOPLIST_FILE = "MWPhotoBrowser_LZ/MWPhotoBrowser_LZ-Info.plist";
@@ -529,6 +539,7 @@
 			baseConfigurationReference = 219EEAAF228DA925B419C789 /* Pods-MWPhotoBrowser_LZ_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WY4DMUU59Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWPhotoBrowser_LZ/MWPhotoBrowser_LZ-Prefix.pch";
 				INFOPLIST_FILE = "MWPhotoBrowser_LZ/MWPhotoBrowser_LZ-Info.plist";

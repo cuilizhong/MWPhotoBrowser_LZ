@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MWPhotoBrowser_LZ'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MWPhotoBrowser_LZ.'
+  s.summary          = '由于MWPhotoBrowser的作者不在维护，所以本人Fork过来，更新了SDWebImageView不在指定版本号以及修改播放视频为AVKit'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,28 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  MWPhotoBrowser can display one or more images or videos by providing either UIImage
+  objects, PHAsset objects, or URLs to library assets, web images/videos or local files.
+  The photo browser handles the downloading and caching of photos from the web seamlessly.
+  Photos can be zoomed and panned, and optional (customisable) captions can be displayed.
                        DESC
 
-  s.homepage         = 'https://github.com/Cui lizhong/MWPhotoBrowser_LZ'
+  s.homepage         = 'https://github.com/cuilizhong/MWPhotoBrowser_LZ'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Cui lizhong' => 'cui_li_zhong@163.com' }
-  s.source           = { :git => 'https://github.com/Cui lizhong/MWPhotoBrowser_LZ.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cuilizhong/MWPhotoBrowser_LZ.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MWPhotoBrowser_LZ/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MWPhotoBrowser_LZ' => ['MWPhotoBrowser_LZ/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
+  s.weak_frameworks = 'Photos'
+ 
+  s.dependency 'MBProgressHUD'
+  s.dependency 'DACircularProgress'
+  s.dependency 'SDWebImage'
+  
 end

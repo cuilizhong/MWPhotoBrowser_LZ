@@ -1,0 +1,41 @@
+PODS:
+  - DACircularProgress (2.3.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - MBProgressHUD (1.2.0)
+  - MWPhotoBrowser_LZ (0.1.0):
+    - DACircularProgress
+    - MBProgressHUD
+    - SDWebImage
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MWPhotoBrowser_LZ (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DACircularProgress
+    - FBSnapshotTestCase
+    - MBProgressHUD
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  MWPhotoBrowser_LZ:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MWPhotoBrowser_LZ: d87ad21785f3b99fec18e595e0f4b9005332b36b
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+
+PODFILE CHECKSUM: 331ed1a80fb60cc4fcab86c8d6edad35ba7a138c
+
+COCOAPODS: 1.11.2
