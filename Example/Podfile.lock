@@ -6,7 +6,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - MBProgressHUD (1.2.0)
-  - MWPhotoBrowser_LZ (0.1.0):
+  - MWPhotoBrowser_LZ (0.1.1):
     - DACircularProgress
     - MBProgressHUD
     - SDWebImage
@@ -33,7 +33,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MWPhotoBrowser_LZ: d87ad21785f3b99fec18e595e0f4b9005332b36b
+  MWPhotoBrowser_LZ: ac9a921337b6ee3e0e7e1b006dd671fc28586c08
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
 
 PODFILE CHECKSUM: 331ed1a80fb60cc4fcab86c8d6edad35ba7a138c

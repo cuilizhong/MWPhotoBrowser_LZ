@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MWPhotoBrowser_LZ'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '由于MWPhotoBrowser的作者不在维护，所以本人Fork过来，更新了SDWebImageView不在指定版本号以及修改播放视频为AVKit'
 
 # This description is used to generate tags and improve search results.
